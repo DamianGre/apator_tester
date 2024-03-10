@@ -3,8 +3,6 @@ import clr
 
 clr.AddReference("dlls/PrefixesLib")
 
-from unittest.mock import patch
-from io import StringIO
 from PrefixesLib import PrefixManager
 
 
