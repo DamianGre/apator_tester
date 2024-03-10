@@ -11,7 +11,7 @@ class TestPrefixManager(unittest.TestCase):
     def test_add_returns_zero(self):
         prefix_manager = PrefixManager()
         prefix_manager.Add(16909060, ' ')
-        result = prefix_manager.Delete(16909060, '\x35')
+        result = prefix_manager.Delete(16909060, '\x35') #there is no prefix with that mask
         self.assertEqual(result, -1)
 
 

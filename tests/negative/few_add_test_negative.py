@@ -12,7 +12,7 @@ class TestPrefixManager(unittest.TestCase):
         prefix_manager = PrefixManager()
         prefix_manager.Add(16909060, '\x05')
         prefix_manager.Add(16909060, '\x07')
-        result = prefix_manager.Add(16909060, '\x07')
+        result = prefix_manager.Add(16909060, '\x07') #added same prefix
         self.assertEqual(result, -1)
 
 

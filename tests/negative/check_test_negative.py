@@ -13,7 +13,7 @@ class TestPrefixManager(unittest.TestCase):
         prefix_manager.Add(16909060, ' ')
         prefix_manager.Add(16909060, '\x01')
         prefix_manager.Add(16909060, '\x05')
-        result = prefix_manager.Check(1690)
+        result = prefix_manager.Check(1690) #data collection doesn't have this base_ip
         self.assertEqual(result, -1)
 
 
